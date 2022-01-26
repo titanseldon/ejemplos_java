@@ -10,9 +10,14 @@ public class Lineas extends JPanel{
 
 	@Override
 	public void paint(Graphics g) {
+		
 		super.paint(g);
 		g.setColor(Color.GREEN);
 		g.drawLine(50, 50, 500, 200);
+		g.setColor(Color.RED);
+		g.drawLine(50, 150, 200, 200);
+		g.setColor(Color.YELLOW);
+		g.drawLine(150, 50, 200, 400);				
 	}
 
 	public static void main(String[] args) {
@@ -26,5 +31,4 @@ public class Lineas extends JPanel{
 		ventana.setLocationRelativeTo(null);
 		ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
-
 }
